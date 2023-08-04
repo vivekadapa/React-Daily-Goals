@@ -1,38 +1,79 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Header{
+  position: fixed;
+  top:0;
+  width: 100%;
+  font-size: 0.75rem;
+  padding:1rem;
   text-align: center;
+  background-color: rgb(0, 115, 255);
+  color:white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  margin-top: 4rem;
+  background-color: rgba(56, 55, 55, 0.6);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.form-container{
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
   min-height: 100vh;
+  padding: 1rem;
+}
+
+.form-container h1{
+  color: rgb(153, 255, 10);
+}
+
+.form-container form{
   display: flex;
   flex-direction: column;
+  padding: 2rem 4rem;
+  gap:1rem;
+}
+
+input,button{
+  padding: 0.75rem;
+  border-radius: 5px;
+  border: none;
+}
+
+button{
+  background-color: rgb(0, 115, 255);;
+  color: white; 
+}
+
+textarea{
+  border: none;
+  border-radius: 5px;
+  text-indent: -0.5rem;
+  padding: 1rem 1.5rem;
+}
+
+.Task{
+  margin: 1rem 0;
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color:white;
 }
 
-.App-link {
-  color: #61dafb;
+.Task div{
+  padding: 1rem;
+  text-align: left;
+  flex: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Task div span{
+  font-size: 0.75rem;
 }
